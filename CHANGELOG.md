@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/sivaparthi/node-app/compare/v1.0.0...v1.0.1) (2025-02-14)
+
+
+### Bug Fixes
+
+* fix in versioning ([7286f4b](https://github.com/sivaparthi/node-app/commit/7286f4bb482ec34013a2a807526e270c99ec886e))
+* new version ([de0e2c6](https://github.com/sivaparthi/node-app/commit/de0e2c66e03bdd5f24170939e78847cbfec5433b))
+* versioning ([859c1f0](https://github.com/sivaparthi/node-app/commit/859c1f057eff00b7e6338d0f857fd2e37518efe2))
+
 # 1.0.0 (2025-02-14)
 
 
