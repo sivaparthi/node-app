@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sivaparthi/node-app#readme",
+  "bugs": {
+    "url": "https://github.com/sivaparthi/node-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivaparthi/node-app.git"
+  },
+  "license": "ISC",
+  "author": "siva",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
