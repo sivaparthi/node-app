@@ -29,14 +29,14 @@ jobs:
           git merge production --no-edit
           git push origin dev
 
-      - name: Merge production into qa
+      - name: Merge production into new_qa
         run: |
-          git checkout qa
+          git checkout new_qa
           git merge production --no-edit
-          git push origin qa
+          git push origin new_qa
 
-      - name: Merge production into uat
+      - name: Merge production into new_uat
         run: |
-          git checkout uat
+          git checkout new_uat
           git merge production --no-edit
-          git push origin uat
+          git push origin new_uat
