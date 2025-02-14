@@ -1,0 +1,28 @@
+name: Release
+on:
+  push:
+    branches:
+      - new_qa
+      - dev
+      - new_qa
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+      - name: Configure Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+      - name: Install dependencies
+        run: npm ci
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # semantic-release automatically sets SEMANTIC_RELEASE_BRANCH based on the branch pushed
+        run: npx semantic-release
